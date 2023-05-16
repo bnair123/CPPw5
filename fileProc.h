@@ -54,6 +54,9 @@ namespace logging {
 
         std::string name() const;
 
+        void flush();
+
+
     private:
         std::string file_name;
         FILE *file;

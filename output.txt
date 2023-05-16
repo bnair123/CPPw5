@@ -1,3 +1,4 @@
-2023-04-28 15:07:00: CPP is not very fun
-driving
+10.550000 A This is a line 
+true
+I enjoy driving
 The zoo is cool

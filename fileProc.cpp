@@ -21,6 +21,10 @@
         }
     }
 
+   /* logging::NamedFile::~NamedFile() {
+    close();
+    }*/
+
     logging::NamedFile& logging::NamedFile::operator<<(const std::string& value) {
         std::fprintf(file, "%s", value.c_str());
         return *this;
@@ -90,4 +94,11 @@
     std::string  logging::NamedFile::name() const {
         return file_name;
     }
+
+    void logging::NamedFile::flush() {
+        if (file) {
+            std::fflush(file);
+        }
+    }
+
 
